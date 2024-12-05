@@ -60,7 +60,7 @@ function App() {
         <div
           className="text-secondary font-formula scroll-smooth"
           style={{
-            backgroundImage: "url('https://path-to-your-image.jpg')",
+            backgroundImage: "url('/bg2.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
