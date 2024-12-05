@@ -45,7 +45,7 @@ const Certifications = () => {
 
   return (
     <div
-      id="certifications"
+      id="certification"
       className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-green-950 to-gray-900 py-10"
     >
       {/* Section Header */}
