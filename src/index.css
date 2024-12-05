@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "formula";
+    src: url("../public/fonts/formula-condensed-free-for-personal-use/FormulaCondensed/FormulaCondensed-Bold.otf");
+  }
+  .trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none; /* Prevents interference with mouse events */
+    animation: fadeOut 1s ease-in-out forwards;
+    z-index: 9999;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  .text-animation:hover {
+    transform: scale(1.1); /* Grow text */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Your Preferred Font', sans-serif;
+  }
+  
+  
+ 

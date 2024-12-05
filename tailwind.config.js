@@ -1,3 +1,5 @@
+import { space } from 'postcss/lib/list';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,11 +7,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      formula: ["formula", "sans-serif"],
+      anton: ['Anton', 'sans-serif'],
+        jaro: ['Jaro', 'sans-serif'],
+        bungee: ['Bungee Shade', 'cursive'],
+        bodoni: ['Bodoni Moda', 'serif'],
+        space: ['Space Mono', 'monospace'],
+        playfair: ['Playfair Display', 'serif'],
+        
+    },
     extend: {},
   },
   plugins: [require('daisyui'),],
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: ["forest"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
