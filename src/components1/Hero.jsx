@@ -95,12 +95,15 @@ const Hero = () => {
           </p>
 
           {/* Resume Button */}
-          <a
-            href="public/Adithi_resume.pdf"
-            className="btn btn-primary font-jaro text-3xl text-white px-6 py-2 rounded-lg shadow-lg hover:shadow-xl hover:bg-gradient-to-r from-green-500 to-blue-500 hover:text-white transition-all duration-500"
-          >
-            Get Resume
-          </a>
+<a
+  href="/Adithi_resume.pdf"  // Ensure the path is correct; no need for "public/" in React
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary font-jaro text-3xl text-white px-6 py-2 rounded-lg shadow-lg hover:shadow-xl hover:bg-gradient-to-r from-green-500 to-blue-500 hover:text-white transition-all duration-500"
+>
+  Get Resume
+</a>
+
         </div>
       </div>
     </div>

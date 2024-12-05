@@ -43,8 +43,11 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Your Preferred Font', sans-serif;
-  }
+    background-image: url('https://i.pinimg.com/236x/8b/e3/32/8be332f81d896ca63fd302910f6ff3d8.jpg');
+    background-size: cover; /* Make sure the image covers the whole page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+    height: 100vh;  }
   
   
  
